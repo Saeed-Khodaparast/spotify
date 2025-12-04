@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./artist.css" />
+    <link rel="stylesheet" href="./playlist.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- #region Left -->
+      <aside class="left">
+        <header>
+          <input type="search" id="searchInput" placeholder="Search artists" />
+        </header>
+
+        <main>
+          <ul id="artistsList"></ul>
+        </main>
+      </aside>
+
+      <!-- endregion Left -->
+
+      <!-- #region Center -->
+      <main class="center">
+        <!-- <input type="search" id="spotifyInput" />
+        <div id="artistData"></div> -->
+        <div id="playlistData"></div>
+      </main>
+
+      <!-- endregion Center -->
+
+      <!-- #region Right -->
+      <aside class="right">
+        <div id="plContainer"></div>
+      </aside>
+
+      <!-- endregion Right -->
+    </main>
+
+    <script src="./api.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

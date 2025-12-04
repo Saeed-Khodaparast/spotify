@@ -1,0 +1,39 @@
+{
+  "external_urls": {
+    "spotify": "https://open.spotify.com/artist/6pIRdCtSE5hLFfIfcTAicI"
+  },
+  "followers": {
+    "href": null,
+    "total": 297892
+  },
+  "genres": [
+    "symphonic metal",
+    "gothic metal",
+    "power metal",
+    "gothic rock",
+    "metal"
+  ],
+  "href": "https://api.spotify.com/v1/artists/6pIRdCtSE5hLFfIfcTAicI",
+  "id": "6pIRdCtSE5hLFfIfcTAicI",
+  "images": [
+    {
+      "url": "https://i.scdn.co/image/ab6761610000e5eb018cf8aa649ae040cabf9e9c",
+      "height": 640,
+      "width": 640
+    },
+    {
+      "url": "https://i.scdn.co/image/ab67616100005174018cf8aa649ae040cabf9e9c",
+      "height": 320,
+      "width": 320
+    },
+    {
+      "url": "https://i.scdn.co/image/ab6761610000f178018cf8aa649ae040cabf9e9c",
+      "height": 160,
+      "width": 160
+    }
+  ],
+  "name": "Delain",
+  "popularity": 45,
+  "type": "artist",
+  "uri": "spotify:artist:6pIRdCtSE5hLFfIfcTAicI"
+}

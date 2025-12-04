@@ -1,0 +1,44 @@
+.artist {
+  width: 260px;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #181818;
+  font-family: Arial, sans-serif;
+  padding-bottom: 0.2rem;
+}
+.artist .container {
+  margin: 1rem;
+}
+.artist:hover {
+  cursor: pointer;
+}
+.artist .image {
+  width: 100%;
+  display: block;
+  border-radius: 1rem 1rem 0 0;
+}
+.artist .name {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+.artist .genres {
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.artist .genre {
+  margin: 0;
+  width: fit-content;
+  border: 1px solid rgb(92, 92, 92);
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
+.artist .followers {
+  width: 100%;
+  font-size: 13px;
+  text-align: left;
+}

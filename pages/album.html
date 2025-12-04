@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album</title>
+    <link rel="stylesheet" href="album.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <input type="search" class="search" placeholder="Search anything" />
+      <div class="albums" onclick="toggleSubMenu('albums')">
+        albums <span class="badge">18</span>
+        <ul class="sub-menu">
+          <li>
+            <span>Album title one</span>
+            <span> - </span>
+            <span>2008</span>
+          </li>
+          <li>
+            <span>Album title two</span>
+            <span> - </span>
+            <span>2012</span>
+          </li>
+          <li>
+            <span>Album title three</span>
+            <span> - </span>
+            <span>2014</span>
+          </li>
+        </ul>
+      </div>
+      <div class="singles" onclick="toggleSubMenu('singles')">
+        singles <span class="badge">40</span>
+        <ul class="sub-menu">
+          <li>
+            <span>Single title one</span>
+            <span> - </span>
+            <span>2008</span>
+          </li>
+          <li>
+            <span>Single title two</span>
+            <span> - </span>
+            <span>2012</span>
+          </li>
+          <li>
+            <span>Single title three</span>
+            <span> - </span>
+            <span>2014</span>
+          </li>
+        </ul>
+      </div>
+      <div class="compilations" onclick="toggleSubMenu('compilations')">
+        compilations <span class="badge">12</span>
+        <ul class="sub-menu">
+          <li>
+            <span>Single title one</span>
+            <span> - </span>
+            <span>2008</span>
+          </li>
+          <li>
+            <span>Single title two</span>
+            <span> - </span>
+            <span>2012</span>
+          </li>
+          <li>
+            <span>Single title three</span>
+            <span> - </span>
+            <span>2014</span>
+          </li>
+        </ul>
+      </div>
+      <div class="playlists" onclick="toggleSubMenu('playlists')">
+        playlists <span class="badge">32</span>
+        <ul class="sub-menu">
+          <li>
+            <span>Single title one</span>
+            <span> - </span>
+            <span>2008</span>
+          </li>
+          <li>
+            <span>Single title two</span>
+            <span> - </span>
+            <span>2012</span>
+          </li>
+          <li>
+            <span>Single title three</span>
+            <span> - </span>
+            <span>2014</span>
+          </li>
+        </ul>
+      </div>
+      <div class="appears-on" onclick="toggleSubMenu('appears-on')">
+        appears on <span class="badge">52</span>
+        <ul class="sub-menu">
+          <li>
+            <span>Single title one</span>
+            <span> - </span>
+            <span>2008</span>
+          </li>
+          <li>
+            <span>Single title two</span>
+            <span> - </span>
+            <span>2012</span>
+          </li>
+          <li>
+            <span>Single title three</span>
+            <span> - </span>
+            <span>2014</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="header">
+        <img class="cover" src="" alt="Album Cover" />
+        <div class="info">
+          <h1 class="title">Loading...</h1>
+          <p class="artist">Loading...</p>
+          <p class="details">Loading...</p>
+          <button
+            class="create-playlist-btn"
+            onclick="createPlaylistFromAlbum()"
+          >
+            Create Playlist
+          </button>
+        </div>
+      </div>
+
+      <div class="tracks-section">
+        <div class="tracks-list"></div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+    <script src="album.js"></script>
+  </body>
+</html>

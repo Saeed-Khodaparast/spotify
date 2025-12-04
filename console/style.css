@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #404040;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab-button:hover {
+  color: #ffffff;
+}
+
+.tab-button.active {
+  color: #1db954;
+  border-bottom-color: #1db954;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#searchInput,
+#artistIdInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px 24px;
+  font-size: 16px;
+  background: #282828;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-bottom: 32px;
+  transition: border-color 0.2s;
+}
+
+#searchInput::placeholder,
+#artistIdInput::placeholder {
+  color: #b3b3b3;
+}
+
+#searchInput:focus,
+#artistIdInput:focus {
+  outline: none;
+  border-color: #1db954;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 600px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  padding: 10px 20px;
+  background: #282828;
+  border: 1px solid #404040;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+label:hover {
+  background: #404040;
+}
+
+input[type="radio"]:checked + label {
+  background: #1db954;
+  border-color: #1db954;
+  color: #000000;
+}
+
+.getBtns {
+  padding: 12px 24px;
+  background: #1db954;
+  color: #000000;
+  border: 1px solid #1db954;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.getBtns:hover {
+  background: #1ed760;
+  border-color: #1ed760;
+}

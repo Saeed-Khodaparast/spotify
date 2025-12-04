@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+#searchInput {
+  width: calc(100% - 32px);
+  margin: 16px 16px;
+  border-radius: 8px;
+  padding: 8px;
+  border-color: rgb(220, 220, 220);
+}
+#searchInput:focus {
+  border-color: aliceblue;
+  background-color: white;
+}
+
+#artistsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.artistsItem {
+  padding: 6px 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.artistsItem:hover {
+  background-color: rgb(229, 229, 229);
+  cursor: pointer;
+}
+.artistsItem:active {
+  background-color: rgb(215, 215, 215);
+}
+
+#artistData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+#artistData li {
+  list-style-type: none;
+}
+
+.left {
+  width: 400px;
+  height: calc(100vh - 32px);
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgb(229, 229, 229);
+  margin: 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.center {
+  width: 100%;
+  height: calc(100vh - 32px);
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgb(229, 229, 229);
+  margin: 16px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.right {
+  width: 800px;
+  height: 100%;
+}
+
+#plContainer {
+  height: calc(100vh - 32px);
+  margin: 16px;
+}

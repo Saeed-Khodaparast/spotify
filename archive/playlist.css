@@ -1,0 +1,152 @@
+.playlist-container {
+  color: rgb(37, 37, 37);
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.playlist-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: end;
+  padding: 20px 0;
+}
+
+.playlist-cover {
+  width: 232px;
+  height: 232px;
+  border-radius: 16px;
+}
+
+.playlist-info {
+  flex: 1;
+}
+
+.playlist-type {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.playlist-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 8px 0 16px 0;
+  line-height: 1.2;
+}
+
+.playlist-description {
+  color: #b3b3b3;
+  margin: 8px 0 16px 0;
+  font-size: 14px;
+}
+
+.playlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.owner {
+  font-weight: 700;
+}
+
+.separator {
+  color: #b3b3b3;
+}
+
+.tracks-section {
+  background: rgba(235, 235, 235, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.tracks-header {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 60px;
+  gap: 16px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #282828;
+  margin-bottom: 16px;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 60px;
+  gap: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  align-items: center;
+}
+
+.track:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.track-number {
+  color: #949494;
+  font-size: 16px;
+  text-align: center;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.track-title {
+  color: rgb(48, 47, 47);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.track-artist {
+  color: #949494;
+  font-size: 14px;
+}
+
+.track-album {
+  color: #949494;
+  font-size: 14px;
+}
+
+.track-duration {
+  color: #949494;
+  font-size: 14px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .playlist-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .playlist-title {
+    font-size: 32px;
+  }
+
+  .tracks-header,
+  .track {
+    grid-template-columns: 40px 1fr 60px;
+  }
+
+  .track-album {
+    display: none;
+  }
+}

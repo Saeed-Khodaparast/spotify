@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist</title>
+    <link rel="stylesheet" href="artist.css" />
+  </head>
+  <body>
+    <div class="artist-page">
+      <div class="hero-section">
+        <img class="artist-image" src="" alt="Artist" />
+        <div class="artist-info">
+          <div class="header">
+            <h1 class="artist-name">Loading...</h1>
+            <span class="add">+</span>
+          </div>
+          <div class="genres"></div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value followers-count">0</span>
+              <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value popularity-score">0</span>
+              <span class="stat-label">Popularity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab active" data-tab="albums">Albums</button>
+          <button class="tab" data-tab="singles">Singles</button>
+          <button class="tab" data-tab="compilations">Compilations</button>
+          <button class="tab" data-tab="playlists">Playlists</button>
+          <button class="tab" data-tab="appears-on">Appears On</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-panel active" id="albums">
+            <p>Albums content will be added here</p>
+          </div>
+          <div class="tab-panel" id="singles">
+            <p>Singles content will be added here</p>
+          </div>
+          <div class="tab-panel" id="compilations">
+            <p>Compilations content will be added here</p>
+          </div>
+          <div class="tab-panel" id="playlists">
+            <p>Playlists content will be added here</p>
+          </div>
+          <div class="tab-panel" id="appears-on">
+            <p>Appears On content will be added here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="artist.js"></script>
+  </body>
+</html>

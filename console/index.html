@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="search">Search</button>
+      <button class="tab-button" data-tab="albums">Albums</button>
+      <button class="tab-button" data-tab="singles">Singles</button>
+      <button class="tab-button" data-tab="compilations">Compilations</button>
+      <button class="tab-button" data-tab="appears">Appears On</button>
+    </div>
+
+    <div id="search" class="tab-content active">
+      <input type="search" id="searchInput" placeholder="Search artists" />
+      <div class="radio-group">
+        <input
+          type="radio"
+          id="artist"
+          name="searchType"
+          value="artist"
+          checked
+        />
+        <label for="artist">Artist</label>
+
+        <input type="radio" id="album" name="searchType" value="album" />
+        <label for="album">Album</label>
+
+        <input type="radio" id="track" name="searchType" value="track" />
+        <label for="track">Track</label>
+
+        <input type="radio" id="playlist" name="searchType" value="playlist" />
+        <label for="playlist">Playlist</label>
+
+        <!-- <input type="radio" id="show" name="searchType" value="show" />
+      <label for="show">Show</label>
+
+      <input type="radio" id="episode" name="searchType" value="episode" />
+      <label for="episode">Episode</label>
+
+      <input type="radio" id="audiobook" name="searchType" value="audiobook" />
+      <label for="audiobook">Audiobook</label> -->
+      </div>
+    </div>
+
+    <div id="albums" class="tab-content">
+      <input type="text" id="artistIdInput" placeholder="Enter Artist ID" />
+      <button id="getAlbumsBtn" class="getBtns">Get Albums</button>
+    </div>
+    <div id="singles" class="tab-content">
+      <input type="text" id="artistIdInput" placeholder="Enter Artist ID" />
+      <button id="getSinglesBtn" class="getBtns">Get Singles</button>
+    </div>
+    <div id="compilations" class="tab-content">
+      <input type="text" id="artistIdInput" placeholder="Enter Artist ID" />
+      <button id="getCompilationsBtn" class="getBtns">Get Compilations</button>
+    </div>
+    <div id="appears" class="tab-content">
+      <input type="text" id="artistIdInput" placeholder="Enter Artist ID" />
+      <button id="getAppearsBtn" class="getBtns">Get Appears On</button>
+    </div>
+
+    <script src="./api.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
