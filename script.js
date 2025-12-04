@@ -128,7 +128,9 @@ function getArtistItem(result) {
 
 function authorizeUser() {
   const clientId = "9055bb3867b045e2893312b71d847881";
-  const redirectUri = encodeURIComponent("https://softiino.ir");
+  const redirectUri = encodeURIComponent(
+    window.location.origin + "/spotify/callback.html"
+  );
   const scopes = "playlist-modify-public playlist-modify-private";
 
   const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${scopes}`;
