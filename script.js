@@ -129,7 +129,7 @@ function getArtistItem(result) {
 function authorizeUser() {
   const clientId = "9055bb3867b045e2893312b71d847881";
   const redirectUri = encodeURIComponent(
-    window.location.origin + "/callback.html"
+    "https://saeed-khodaparast.github.io/spotify/callback.html"
   );
   const scopes = "playlist-modify-public playlist-modify-private";
 
