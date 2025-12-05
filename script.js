@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   refreshBtn.addEventListener("click", () => {
     localStorage.removeItem("spotifyAccessToken");
-    window.location.reload();
+    // Reset the page state instead of reloading
+    searchResults.innerHTML = "";
+    searchInput.value = "";
+    // Re-trigger the authorization flow
+    authorizeUser();
   });
 
   // #region Listeners
@@ -129,7 +133,7 @@ function getArtistItem(result) {
 function authorizeUser() {
   const clientId = "9055bb3867b045e2893312b71d847881";
   const redirectUri = encodeURIComponent(
-    window.location.origin + "/callback.html"
+    "https://saeed-khodaparast.github.io/spotify/callback.html"
   );
   const scopes = "playlist-modify-public playlist-modify-private";
 
