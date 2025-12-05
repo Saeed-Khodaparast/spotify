@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   refreshBtn.addEventListener("click", () => {
     localStorage.removeItem("spotifyAccessToken");
-    window.location.reload();
+    // Reset the page state instead of reloading
+    searchResults.innerHTML = "";
+    searchInput.value = "";
+    // Re-trigger the authorization flow
+    authorizeUser();
   });
 
   // #region Listeners
